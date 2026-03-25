@@ -1,0 +1,17 @@
+# Training & Model Configuration for Disentangled Speaker Recognition
+model:
+  n_mfcc: 40
+  hidden_dim: 128
+  embedding_dim: 64
+  num_speakers: 300
+
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  epochs: 2
+  orthogonality_weight: 0.1
+
+dataset:
+  train_split: "train-clean-100"
+  test_split: "test-clean"
+  sample_rate: 16000
